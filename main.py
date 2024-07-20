@@ -162,9 +162,9 @@ class Snake(GameObject):
             mouth_start = (head_x + 5, head_y + 7)
             mouth_end = (head_x + 5, head_y + 13)
 
-        pygame.draw.circle(screen, WHITE, left_eye, 3)
-        pygame.draw.circle(screen, WHITE, right_eye, 3)
-        pygame.draw.line(screen, RED, mouth_start, mouth_end, 2)
+        pygame.draw.circle(screen, BLACK, left_eye, 3)
+        pygame.draw.circle(screen, BLACK, right_eye, 3)
+        pygame.draw.line(screen, RED, mouth_start, mouth_end, 3)
 
     # Проверка на столкновение с самой собой
     def check_collision(self):
